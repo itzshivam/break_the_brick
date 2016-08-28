@@ -1,0 +1,110 @@
+
+<!-- 
+<?php
+/*
+session_start();
+ $server="localhost";
+ $user="root";
+ $password="";
+ $database="nature";
+ 
+ $connect=new mysqli($server,$user,$password,$database) or die('not connected');
+ */
+?>
+ -->
+
+<!--
+ <html>
+   <head>
+    <link rel="stylesheet" href="snake.css">
+   </head>
+     <body>
+      <section id="login">
+      
+      </section>
+   
+ <div id="formBody">
+ 
+     <form id="form" action="breakTheWall.php" method='POST'>
+      
+        
+        Please login to continue
+        <br><br>
+         Username : <input type="name" name="username" placeholder="username" style="font-size:15px;padding:2px; border-radius:5px;margin:10px"><br>
+         Password : <input type="password" name="password" placeholder="password"style="font-size:15px;padding:2px; border-radius:5px;margin:13px"><br>
+         <input type="submit" value="login" name="submit" style="font-size:20px;padding:5px; border-radius:5px;position:relative;left:100px;width:100px;margin:25px"><br><br><br>
+          Don't have an account? Create a new account 
+        </form>
+        
+      
+     </div>
+    </body>
+</html>
+-->
+<!-- 
+<?php
+/*
+if((isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password'])) ) 
+
+{
+  $username=$_POST['username'];
+  $password=md5($_POST['password']);
+  
+  $username_already="SELECT id FROM signUp WHERE username='$username' AND password='$password'";
+  
+  $connect_user=$connect->query($username_already);
+  
+  if($connect_user->num_rows>0)
+  {
+    set_session();
+  }
+  
+
+ 
+}
+if ((isset($_SESSION['username'] ) && isset($_SESSION['password'])))
+ {
+  
+ }
+ else 
+  {
+      di29);
+  }
+  
+   function set_session(){
+     $_SESSION['username']=$_POST['username'];
+     $_SESSION['password']=$_POST['password'];
+   }
+  
+  */
+?>
+ -->
+
+<script>
+
+/* window.addEventListener('load',
+ function(){
+  document.getElementById("login").style.display="none";
+   document.getElementById("formBody").style.display="none";
+   document.getElementById('form').style.display='none';
+ },false);
+ */
+</script>
+
+
+<html>
+  <head>
+     <title>breakTheWall</title> 
+     
+     <script src="breakTheWall.js"></script>
+  </head>
+  
+  <body>
+     <canvas id="mainCanvas"  style="background:black;cursor:none">
+        
+     </canvas>
+     
+     <div ></div>
+     
+  </body>
+</hmtl>
